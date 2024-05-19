@@ -8,7 +8,7 @@ const generateTarget = () => {
     return Math.floor(Math.random() * 10);
 }
 
-const compareGuesses = (humanGuess, computerGuess, target) {
+const compareGuesses = (humanGuess, computerGuess, target) => {
     if (Math.abs(humanGuess - target) <= Math.abs(computerGuess - target)) {
         return true;
     } else {
